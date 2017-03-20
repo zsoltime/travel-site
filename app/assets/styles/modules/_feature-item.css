@@ -1,0 +1,42 @@
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 2.5rem;
+
+  @mixin atSmall {
+    flex-direction: row;
+  }
+
+  &__icon {
+    align-self: center;
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+
+    @mixin atSmall {
+      align-self: flex-start;
+      flex-basis: 64px;
+      margin-right: 32px;
+    }
+  }
+
+  &__content {
+    flex-basis: 100%;
+
+    @mixin atSmall {
+      flex-basis: calc(100% - 96px);
+    }
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 0 0 .8rem;
+    text-align: center;
+
+    @mixin atSmall {
+      font-size: 1.875rem;
+      text-align: left;
+    }
+  }
+}
