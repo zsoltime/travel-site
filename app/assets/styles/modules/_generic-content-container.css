@@ -1,0 +1,15 @@
+.generic-content-container {
+  p {
+    line-height: 1.65;
+    margin-bottom: 1.8rem;
+    margin-top: 0;
+
+    @mixin atSmall {
+      font-size: 1.125rem;
+    }
+  }
+
+  a {
+    font-weight: 700;
+  }
+}

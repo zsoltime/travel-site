@@ -1,0 +1,42 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  &--gutters {
+    margin-right: -60px;
+  }
+
+  &--gutters > div {
+    padding-right: 60px;
+  }
+}
+
+.col {
+  flex: 1 0 100%;
+
+  &--b-margin-until-medium {
+    margin-bottom: 1rem;
+  }
+
+  @mixin atMedium {
+    &--b-margin-until-medium {
+      margin-bottom: 0;
+    }
+
+    &--medium-4 {
+      flex-basis: 33.33333%;
+
+      &--larger {
+        flex-basis: 37%;
+      }
+    }
+
+    &--medium-8 {
+      flex-basis: 66.66666%;
+
+      &--smaller {
+        flex-basis: 63%;
+      }
+    }
+  }
+}
