@@ -4,10 +4,18 @@
 
   &--gutters {
     margin-right: -60px;
+
+    & > div {
+      padding-right: 60px;
+    }
   }
 
-  &--gutters > div {
-    padding-right: 60px;
+  &--gutters-large {
+    margin-right: -100px;
+
+    & > div {
+      padding-right: 100px;
+    }
   }
 }
 
@@ -29,6 +37,10 @@
       &--larger {
         flex-basis: 37%;
       }
+    }
+
+    &--medium-6 {
+      flex-basis: 50%;
     }
 
     &--medium-8 {
