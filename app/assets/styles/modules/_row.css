@@ -17,6 +17,18 @@
       padding-right: 100px;
     }
   }
+
+  &--gutters-small {
+    margin-right: -45px;
+
+    & > div {
+      padding-right: 45px;
+    }
+  }
+
+  &--t-padding {
+    padding-top: 80px;
+  }
 }
 
 .col {
@@ -44,6 +56,32 @@
     }
 
     &--medium-8 {
+      flex-basis: 66.66666%;
+
+      &--smaller {
+        flex-basis: 63%;
+      }
+    }
+  }
+
+  @mixin atLarge {
+    &--b-margin-until-large {
+      margin-bottom: 0;
+    }
+
+    &--large-4 {
+      flex-basis: 33.33333%;
+
+      &--larger {
+        flex-basis: 37%;
+      }
+    }
+
+    &--large-6 {
+      flex-basis: 50%;
+    }
+
+    &--large-8 {
       flex-basis: 66.66666%;
 
       &--smaller {
