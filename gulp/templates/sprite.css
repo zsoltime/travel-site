@@ -10,7 +10,7 @@ Edit gulp/templates/sprite.css instead */
 
   .icon--{{base}} {
     background-position: {{position.relative.xy}};
-    height: {{width.outer}}px;
-    width: {{height.outer}}px;
+    height: {{height.outer}}px;
+    width: {{width.outer}}px;
   }
 {{/shapes}}

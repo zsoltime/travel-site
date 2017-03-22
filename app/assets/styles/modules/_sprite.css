@@ -7,8 +7,8 @@ Edit gulp/templates/sprite.css instead */
 
   .icon--clear-view-escapes {
     background-position: 0 0;
-    height: 142.4px;
-    width: 59.53px;
+    height: 59.53px;
+    width: 142.4px;
   }
 
   .icon--comment {
@@ -19,14 +19,14 @@ Edit gulp/templates/sprite.css instead */
 
   .icon--facebook {
     background-position: 26.040607071652357% 45.795830448496034%;
-    height: 21.23px;
-    width: 42.01px;
+    height: 42.01px;
+    width: 21.23px;
   }
 
   .icon--fire {
     background-position: 0 99.56481481481481%;
-    height: 56px;
-    width: 64px;
+    height: 64px;
+    width: 56px;
   }
 
   .icon--globe {
@@ -43,8 +43,8 @@ Edit gulp/templates/sprite.css instead */
 
   .icon--mail {
     background-position: 0 48.00806451612903%;
-    height: 64px;
-    width: 48px;
+    height: 48px;
+    width: 64px;
   }
 
   .icon--rain {
@@ -61,18 +61,18 @@ Edit gulp/templates/sprite.css instead */
 
   .icon--twitter {
     background-position: 94.04330452560171% 98.50700323226104%;
-    height: 51.78px;
-    width: 42.06px;
+    height: 42.06px;
+    width: 51.78px;
   }
 
   .icon--wifi {
     background-position: 68.79227053140097% 0;
-    height: 60px;
-    width: 64px;
+    height: 64px;
+    width: 60px;
   }
 
   .icon--youtube {
     background-position: 36.69752421959096% 45.792307692307695%;
-    height: 34.75px;
-    width: 42px;
+    height: 42px;
+    width: 34.75px;
   }
