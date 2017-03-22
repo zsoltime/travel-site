@@ -8,11 +8,16 @@
 
   &__text-content {
     left: 0;
+    padding-top: 88px;
     position: absolute;
     text-align: center;
     transform: translateY(-50%);
     top: 50%;
     width: 100%;
+
+    @mixin atMedium {
+      padding-top: 60px;
+    }
   }
 
   &__title {
@@ -43,7 +48,7 @@
     font-weight: 100;
     margin: 2rem auto;
     max-width: 30rem;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+    text-shadow: 2px 2px 0 rgba(#000, .1);
 
     @mixin atSmall {
       font-size: 1.875rem;

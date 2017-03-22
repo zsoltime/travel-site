@@ -1,0 +1,32 @@
+.primary-nav {
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    padding-right: .75rem;
+
+    @mixin atMedium {
+      padding-right: 1.25rem;
+    }
+  }
+
+  a {
+    background-color: rgba($main-blue, .3);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: 300;
+    padding: 5px 8px;
+    text-decoration: none;
+
+    @mixin atMedium {
+      background-color: transparent;
+      font-size: 1rem;
+      padding: 0;
+    }
+  }
+}
