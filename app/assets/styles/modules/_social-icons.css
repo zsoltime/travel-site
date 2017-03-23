@@ -1,0 +1,18 @@
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+
+  &__icon {
+    align-items: center;
+    background-color: $main-orange;
+    display: inline-flex;
+    height: 64px;
+    justify-content: center;
+    width: 64px;
+
+    @mixin atSmall {
+      height: 72px;
+      width: 72px;
+    }
+  }
+}

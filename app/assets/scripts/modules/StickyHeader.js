@@ -23,16 +23,18 @@ class StickyHeader {
       },
     });
   }
+  toggleActivate(section) {
+    const matchingLink = document.querySelector(section.dataset.matchingLink);
+    this.headerLinks.forEach(i => i.classList.remove('is-active'));
+    matchingLink.classList.toggle('is-active');
+  }
   createPageSectionWaypoints() {
     this.pageSections.forEach(section => {
-      const that = this;
       new Waypoint({
         element: section,
         handler: (dir) => {
           if (dir === 'up') return;
-          const matchingLink = document.querySelector(section.dataset.matchingLink);
-          that.headerLinks.forEach(i => i.classList.remove('is-active'));
-          matchingLink.classList.toggle('is-active');
+          this.toggleActivate(section);
         },
         offset: '15%',
       });
@@ -41,9 +43,7 @@ class StickyHeader {
         element: section,
         handler: (dir) => {
           if (dir === 'down') return;
-          const matchingLink = document.querySelector(section.dataset.matchingLink);
-          that.headerLinks.forEach(i => i.classList.remove('is-active'));
-          matchingLink.classList.toggle('is-active');
+          this.toggleActivate(section);
         },
         offset: '-40%',
       });
