@@ -1,6 +1,7 @@
-const styles = require('./gulp/tasks/styles');
-const watch = require('./gulp/tasks/watch');
-const sprites = require('./gulp/tasks/sprites');
-const scripts = require('./gulp/tasks/scripts');
-const modernizr = require('./gulp/tasks/modernizr');
-const start = require('./gulp/tasks/default');
+require('./gulp/tasks/styles');
+require('./gulp/tasks/watch');
+require('./gulp/tasks/sprites');
+require('./gulp/tasks/scripts');
+require('./gulp/tasks/modernizr');
+require('./gulp/tasks/build');
+require('./gulp/tasks/default');
