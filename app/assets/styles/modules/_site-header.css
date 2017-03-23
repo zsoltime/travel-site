@@ -7,6 +7,11 @@
 
   @mixin atMedium {
     background-color: rgba($main-blue, 0.3);
+    position: fixed;
+
+    &--dark {
+      background-color: rgba(23, 51, 72, 0.8);
+    }
   }
 
   &--is-expanded {
@@ -30,11 +35,16 @@
     top: -0.625rem;
     transform: translateX(-50%) scale(0.75);
     transform-origin: 50% 0;
+    transition: transform .3s ease-in-out;
     z-index: 3;
 
     @mixin atMedium {
       left: 1rem;
       transform: translateX(0);
+
+      &--small {
+        transform: scale(0.57);
+      }
     }
 
     &__graphic {
