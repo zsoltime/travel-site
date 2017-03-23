@@ -1463,9 +1463,9 @@ Edit gulp/templates/sprite.css instead */
   padding: 0;
   position: absolute;
   right: 1rem;
+  top: 1rem;
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
-  top: 1rem;
   width: 6vmin;
 }
 
@@ -1493,7 +1493,7 @@ Edit gulp/templates/sprite.css instead */
   height: 64px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;/*margin: 0 5px;*/
+          justify-content: center;
   width: 64px;
 }
 
