@@ -3,6 +3,7 @@ import { polyfill as smoothScroll } from 'smoothscroll-polyfill';
 
 class StickyHeader {
   constructor() {
+    this.lazyImages = document.querySelectorAll('.lazyload')
     this.siteHeader = document.querySelector('.site-header');
     this.headerTriggerElement = document.querySelector('.large-hero__title');
     this.logo = document.querySelector('.site-header__logo');
@@ -12,6 +13,7 @@ class StickyHeader {
     this.createHeaderWaypoint();
     this.createPageSectionWaypoints();
     this.addSmoothScrolling();
+    this.refreshWaypoints();
   }
   createHeaderWaypoint() {
     const that = this;
@@ -22,6 +24,11 @@ class StickyHeader {
         that.logo.classList.toggle('site-header__logo--small');
       },
     });
+  }
+  refreshWaypoints() {
+    this.lazyImages.forEach(img => (
+      img.addEventListener('load', () => Waypoint.refreshAll())
+    ));
   }
   toggleActivate(section) {
     const matchingLink = document.querySelector(section.dataset.matchingLink);
